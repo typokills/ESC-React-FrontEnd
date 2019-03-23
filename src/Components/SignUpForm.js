@@ -21,12 +21,12 @@ export default class SignUpForm extends React.Component {
               <Form.Row>
                 <Form.Group as={Col} controlId="formGridEmail">
                   <Form.Label>First Name</Form.Label>
-                  <Form.Control type="email" placeholder="Jeremy" />
+                  <Form.Control placeholder="Jeremy" />
                 </Form.Group>
 
                 <Form.Group as={Col} controlId="formGridPassword">
                   <Form.Label>Last Name</Form.Label>
-                  <Form.Control type="password" placeholder="Wang" />
+                  <Form.Control  placeholder="Wang" />
                 </Form.Group>
               </Form.Row>
 
