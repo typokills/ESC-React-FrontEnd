@@ -60,7 +60,7 @@ export default class NewTicket extends React.Component {
 
                 <InputGroup className="mb-3">
                     <InputGroup.Prepend>
-                        <InputGroup.Text id="basic-addon2">Phone Number</InputGroup.Text>
+                        <InputGroup.Text id="Phone Number">Phone Number</InputGroup.Text>
                     </InputGroup.Prepend>
                     <FormControl
                     placeholder="+65 91234567"
