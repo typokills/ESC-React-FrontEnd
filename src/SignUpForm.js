@@ -30,8 +30,12 @@ export default class SignUpForm extends React.Component {
               </Form>
             </Navbar.Collapse>
           </Navbar>
-         <Container className="align-center">
-          <Card style={{width:"30rem"}}  className="text-center">
+         <Container style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center"
+          }}>
+          <Card style={{width:"50rem"}}  className="text-centre">
               <Card.Header>Sign Up Form</Card.Header>
               <Card.Title>You're about to be an exclusive member of the Accenture Club.</Card.Title>
               <Card.Text>
