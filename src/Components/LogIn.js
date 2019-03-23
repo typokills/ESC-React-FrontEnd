@@ -1,6 +1,8 @@
 import React from 'react'
-import {Navbar,Nav,NavDropdown,Form,FormControl, Button, Image, Container} from 'react-bootstrap'
+import {Navbar,Nav,NavDropdown,Form,FormControl, Button, Image, Container, Card} from 'react-bootstrap'
 //import logo from './homepage_Accenture.png';
+
+
 
 export default class LogIn extends React.Component {
     render(){
@@ -10,14 +12,14 @@ export default class LogIn extends React.Component {
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
+            
           }}>
-          <Form style={{width:"30rem"}} className="text-center" >
+          <Card  style={{width:"30rem"}} className="text-center" >
+            <Card.Header as="h5">Portal Log In</Card.Header>
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" />
-                    <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                    </Form.Text>
+ 
                 </Form.Group>
 
                 <Form.Group controlId="formBasicPassword">
@@ -27,7 +29,8 @@ export default class LogIn extends React.Component {
                 <Button variant="primary" type="submit">
                     Log in
                 </Button>
-         </Form>
+            
+         </Card>
          </Container>
           </div>
           

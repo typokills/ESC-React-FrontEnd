@@ -9,6 +9,8 @@ import SignUpForm from './Components/SignUpForm.js'
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import HomeTip from './ToolTips/HomeTip';
 import TicketTip from './ToolTips/TicketTip';
+import NewTicket from './Components/NewTicket'
+
 
 class App extends Component {
   render() {
@@ -37,15 +39,16 @@ class App extends Component {
                       >
                   <Nav.Link href="/">Home</Nav.Link>
                 </OverlayTrigger>
+
                 <OverlayTrigger placement="right-start"
                   delay={{ show: 0, hide: 0 }}
                   overlay={TicketTip}
                   placement='bottom'>
-                  <Nav.Link href="#Tickets">Tickets</Nav.Link>
+                  <Nav.Link href="/ViewTickets">Tickets</Nav.Link>
                 </OverlayTrigger>
 
 
-                <Nav.Link href="#askQuestions">Ask questions</Nav.Link>
+                <Nav.Link href="/NewTicket">Ask questions</Nav.Link>
 
               </Nav>
               <Form inline>
@@ -61,6 +64,7 @@ class App extends Component {
         <Route path="/" component={HomePage}></Route>
         <Route path="/SignUp" component={SignUpForm}></Route>
         <Route path="/LogIn" component={LogIn}></Route>
+        <Route path="/NewTicket" component={NewTicket}></Route>
 
       </Router>
       </div>
