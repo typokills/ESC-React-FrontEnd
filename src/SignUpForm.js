@@ -2,7 +2,7 @@ import React from 'react'
 import {Navbar,Nav,NavDropdown,Form,FormControl, Card, Button, Image, Container, Col} from 'react-bootstrap'
 //import logo from './homepage_Accenture.png';
 
-export default class TicketForm extends React.Component {
+export default class SignUpForm extends React.Component {
     render(){
         return (
         <div>
@@ -30,64 +30,52 @@ export default class TicketForm extends React.Component {
               </Form>
             </Navbar.Collapse>
           </Navbar>
-          <Container>
-          <Card className="text-center">
+         <Container className="align-center">
+          <Card style={{width:"30rem"}}  className="text-center">
               <Card.Header>Sign Up Form</Card.Header>
+              <Card.Title>You're about to be an exclusive member of the Accenture Club.</Card.Title>
+              <Card.Text>
+                  Our Consultants provide 24/7 to ensure your business runs smoothly.
+                </Card.Text>
               <Card.Body>
               <Form.Row>
                 <Form.Group as={Col} controlId="formGridEmail">
-                  <Form.Label>Email</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" />
+                  <Form.Label>First Name</Form.Label>
+                  <Form.Control type="email" placeholder="Jeremy" />
                 </Form.Group>
 
                 <Form.Group as={Col} controlId="formGridPassword">
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control type="password" placeholder="Password" />
+                  <Form.Label>Last Name</Form.Label>
+                  <Form.Control type="password" placeholder="Wang" />
                 </Form.Group>
               </Form.Row>
 
               <Form.Group controlId="formGridAddress1">
-                <Form.Label>Address</Form.Label>
-                <Form.Control placeholder="1234 Main St" />
+                <Form.Label>Email Address</Form.Label>
+                <Form.Control type="email" placeholder="Enter Email" />
               </Form.Group>
 
               <Form.Group controlId="formGridAddress2">
-                <Form.Label>Address 2</Form.Label>
-                <Form.Control placeholder="Apartment, studio, or floor" />
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" placeholder="Password" />
               </Form.Group>
 
               <Form.Row>
-                <Form.Group as={Col} controlId="formGridCity">
-                  <Form.Label>City</Form.Label>
-                  <Form.Control />
-                </Form.Group>
 
                 <Form.Group as={Col} controlId="formGridState">
-                  <Form.Label>State</Form.Label>
+                  <Form.Label>Account Type</Form.Label>
                   <Form.Control as="select">
                     <option>Choose...</option>
-                    <option>...</option>
+                    <option>Client</option>
+                    <option>Admin</option>
                   </Form.Control>
                 </Form.Group>
-
-                <Form.Group as={Col} controlId="formGridZip">
-                  <Form.Label>Zip</Form.Label>
-                  <Form.Control />
-                </Form.Group>
               </Form.Row>
-
-              <Form.Group id="formGridCheckbox">
-                <Form.Check type="checkbox" label="Check me out" />
-              </Form.Group>
-                <Card.Title>Special title treatment</Card.Title>
-                <Card.Text>
-                  With supporting text below as a natural lead-in to additional content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Button variant="primary">Sign me up!</Button>
               </Card.Body>
-              <Card.Footer className="text-muted">2 days ago</Card.Footer>
-            </Card>;
-          </Container>
+              <Card.Footer className="text-muted">High performance. Delivered.</Card.Footer>
+            </Card>
+            </Container>
           </div>
           
         );
@@ -101,3 +89,8 @@ export default class TicketForm extends React.Component {
 // value ={this.state.firstName} 
 // onChange={e=>this.setState({ firstName: e.target.value})} 
 //   />
+
+
+              {/*<Form.Group id="formGridCheckbox">
+                <Form.Check type="checkbox" label="Check me out" />
+        </Form.Group>*/}

@@ -5,7 +5,7 @@ import HomePage from './HomePage.js';
 import {Button,ButtonToolbar} from 'react-bootstrap';
 import myForm from './myForm.js';
 import LogIn from './LogIn.js';
-import TicketForm from './TicketForm.js'
+import SignUpForm from './SignUpForm.js'
 
 class App extends Component {
   render() {
@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">
         {/*<HomePage></HomePage>*/}
         {/*<LogIn></LogIn>*/}
-        <TicketForm></TicketForm>
+        <SignUpForm></SignUpForm>
       </div>
     );
   }
