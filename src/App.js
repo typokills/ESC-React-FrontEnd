@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import {Navbar,Nav,NavDropdown,Form,FormControl, Card, Button, Image, Container, Col} from 'react-bootstrap'
 import logo from './logo.svg';
 import './App.css';
 import HomePage from './Components/HomePage.js';
-import {Button,ButtonToolbar} from 'react-bootstrap';
 import myForm from './myForm.js';
 import LogIn from './Components/LogIn.js';
 import SignUpForm from './Components/SignUpForm.js'
@@ -15,6 +15,30 @@ class App extends Component {
     return (
 
       <div className="App">
+        <Navbar bg="light" expand="lg">
+            <Navbar.Brand href="#home">
+              <img 
+                src="/Images/accenture.png"
+                width="50"
+                height="50"
+                className="d-inline-block align-top"
+                //alt="React Bootstrap logo"
+                />
+              </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mr-auto">
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#Tickets">Tickets</Nav.Link>
+                <Nav.Link href="#askQuestions">Ask questions</Nav.Link>
+
+              </Nav>
+              <Form inline>
+               <Nav.Link href="#link">Sign up</Nav.Link>
+               <Nav.Link href="#link">Log in</Nav.Link>
+              </Form>
+            </Navbar.Collapse>
+          </Navbar>
       <Router>
      
         {/*<HomePage></HomePage>*/}

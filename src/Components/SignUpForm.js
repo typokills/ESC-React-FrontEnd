@@ -6,36 +6,12 @@ export default class SignUpForm extends React.Component {
     render(){
         return (
         <div>
-          <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#home">
-              <img 
-                src="/Images/accenture.png"
-                width="50"
-                height="50"
-                className="d-inline-block align-top"
-                //alt="React Bootstrap logo"
-                />
-              </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#Tickets">Tickets</Nav.Link>
-                <Nav.Link href="#askQuestions">Ask questions</Nav.Link>
-
-              </Nav>
-              <Form inline>
-               <Nav.Link href="#link">Sign up</Nav.Link>
-               <Nav.Link href="#link">Log in</Nav.Link>
-              </Form>
-            </Navbar.Collapse>
-          </Navbar>
          <Container style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
           }}>
-          <Card style={{width:"50rem"}}  className="text-left">
+          <Card style={{width:"50rem"}}  className="text-center">
               <Card.Header>Sign Up Form</Card.Header>
               <Card.Title>You're about to be an exclusive member of the Accenture Club.</Card.Title>
               <Card.Text>
