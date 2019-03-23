@@ -28,14 +28,14 @@ class App extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="#Tickets">Tickets</Nav.Link>
                 <Nav.Link href="#askQuestions">Ask questions</Nav.Link>
 
               </Nav>
               <Form inline>
-               <Nav.Link href="#link">Sign up</Nav.Link>
-               <Nav.Link href="#link">Log in</Nav.Link>
+               <Nav.Link href="/SignUp">Sign up</Nav.Link>
+               <Nav.Link href="/LogIn">Log in</Nav.Link>
               </Form>
             </Navbar.Collapse>
           </Navbar>
