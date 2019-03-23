@@ -35,7 +35,11 @@ export default class SignUpForm extends React.Component {
             alignItems: "center",
             justifyContent: "center"
           }}>
+<<<<<<< HEAD
           <Card style={{width:"50rem"}}  className="text-centre">
+=======
+          <Card style={{width:"50rem"}}  className="text-left">
+>>>>>>> 1a42998e83b6a252b4e1fafc753d517a747de62d
               <Card.Header>Sign Up Form</Card.Header>
               <Card.Title>You're about to be an exclusive member of the Accenture Club.</Card.Title>
               <Card.Text>
