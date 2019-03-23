@@ -6,8 +6,12 @@ export default class LogIn extends React.Component {
     render(){
         return (
         <div>
-        <Container>
-          <Form>
+        <Container style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center"
+          }}>
+          <Form style={{width:"30rem"}} className="text-center" >
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" />
@@ -19,9 +23,6 @@ export default class LogIn extends React.Component {
                 <Form.Group controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" />
-                </Form.Group>
-                <Form.Group controlId="formBasicChecbox">
-                    <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
                 <Button variant="primary" type="submit">
                     Log in
