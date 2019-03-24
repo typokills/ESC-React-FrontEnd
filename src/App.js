@@ -49,6 +49,18 @@ class App extends Component {
 
 
                 <Nav.Link href="/NewTicket">Ask questions</Nav.Link>
+                
+
+                
+              
+                {/* <OverlayTrigger placement="right-start"
+                  delay={{ show: 0, hide: 0 }}
+                  overlay={TicketTip}
+                  placement='bottom'>
+                  <button onClick={() => this.onSetSidebarOpen(true)} >
+                    Open sidebar
+                  </button>
+                </OverlayTrigger> */}
 
               </Nav>
               <Form inline>
