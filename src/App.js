@@ -17,12 +17,12 @@ class App extends Component {
     return (
 
       <div className="App">
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="dark" expand="lg">
             <Navbar.Brand href="#home">
               <img 
-                src="/Images/accenture.png"
-                width="50"
-                height="50"
+                src="/Images/accenturelogowhite.png"
+                width="136"
+                height="40"
                 className="d-inline-block align-top"
                 //alt="React Bootstrap logo"
                 />
@@ -37,18 +37,48 @@ class App extends Component {
                   overlay={HomeTip}
                   placement='bottom'
                       >
-                  <Nav.Link href="/">Home</Nav.Link>
+                  <Nav.Link 
+                    href="/"
+                    style={{ color: 'white' }}
+                  >
+                    <img 
+                      src="/Images/home.png"
+                      width="25"
+                      height="25"
+                      className="d-inline-block align-top"
+                    />
+                  Home</Nav.Link>
                 </OverlayTrigger>
 
                 <OverlayTrigger placement="right-start"
                   delay={{ show: 0, hide: 0 }}
                   overlay={TicketTip}
                   placement='bottom'>
-                  <Nav.Link href="/ViewTickets">Tickets</Nav.Link>
+                  <Nav.Link 
+                    href="/ViewTickets"
+                    style={{ color: 'white' }}
+                  >
+                    <img 
+                      src="/Images/tickets.png"
+                      width="25"
+                      height="25"
+                      className="d-inline-block align-top"
+                    />
+                  Tickets</Nav.Link>
                 </OverlayTrigger>
 
 
-                <Nav.Link href="/NewTicket">Ask questions</Nav.Link>
+                <Nav.Link 
+                  href="/NewTicket"
+                  style={{ color: 'white' }}
+                >
+                  <img 
+                      src="/Images/questions.png"
+                      width="25"
+                      height="25"
+                      className="d-inline-block align-top"
+                    />
+                Ask questions</Nav.Link>
                 
 
                 
@@ -64,8 +94,15 @@ class App extends Component {
 
               </Nav>
               <Form inline>
-               <Nav.Link href="/SignUp">Sign up</Nav.Link>
-               <Nav.Link href="/LogIn">Log in</Nav.Link>
+               <Nav.Link 
+                href="/SignUp"
+                style={{ color: 'orange' }}
+               >Sign up</Nav.Link>
+
+               <Nav.Link 
+                href="/LogIn"
+                style={{ color: 'orange' }}
+                >Log in</Nav.Link>
               </Form>
             </Navbar.Collapse>
           </Navbar>

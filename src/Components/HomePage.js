@@ -19,7 +19,10 @@ class HomePage extends React.Component {
   render() {
     return (
       <Sidebar
-        sidebar={<b>Sidebar content testing width</b>}
+        sidebar={
+        <b style={{ color: 'white' }}>
+        Sidebar content testing width
+        </b>}
         open={this.state.sidebarOpen}
         onSetOpen={this.onSetSidebarOpen}
         bg="dark" expand="lg"
