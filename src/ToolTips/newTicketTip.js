@@ -1,8 +1,7 @@
  
  import React from 'react'
-import { Tooltip } from 'react-bootstrap';
- export const HomeTip = props => (
-    <Tooltip
+ export const newTicketTip = props => (
+    <div
       {...props}
       style={{
         backgroundColor: 'rgba(0, 0, 0, 0.85)',
@@ -12,11 +11,9 @@ import { Tooltip } from 'react-bootstrap';
         ...props.style,
       }}
     >
-     
-        Back to Home Page
-      
-    </Tooltip>
+      Let us help! 
+    </div>
   );
 
-export default HomeTip
+export default newTicketTip
   

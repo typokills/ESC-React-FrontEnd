@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Navbar,Nav,NavDropdown,Form,FormControl, Card, Button, Image, Container, Col, OverlayTrigger} from 'react-bootstrap'
+import {Navbar,Nav,NavDropdown,Form,FormControl, Card, Button, Image, Container, Col, OverlayTrigger, Tooltip} from 'react-bootstrap'
 import logo from './logo.svg';
 import './App.css';
 import HomePage from './Components/HomePage.js';
@@ -10,17 +10,18 @@ import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import HomeTip from './ToolTips/HomeTip';
 import TicketTip from './ToolTips/TicketTip';
 import NewTicket from './Components/NewTicket'
-
+import newTicketTip from './ToolTips/newTicketTip'
 
 class App extends Component {
   render() {
     return (
-
+      
       <div className="App">
-        <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#home">
+        
+        <Navbar bg="dark" variant="dark" expand="lg">
+            <Navbar.Brand  href="#home">
               <img 
-                src="/Images/accenture.png"
+                src="/Images/accentureOrange.png"
                 width="50"
                 height="50"
                 className="d-inline-block align-top"
@@ -29,31 +30,45 @@ class App extends Component {
               </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
+              <Nav  className="mr-auto">
                
                 <OverlayTrigger
-                  placement="right-start"
-                  delay={{ show: 0, hide: 0 }}
-                  overlay={HomeTip}
+                  placement="right-start"                  
+                  overlay={
+                    <Tooltip>
+                      Back to Homepage
+                    </Tooltip>
+                  }
                   placement='bottom'
                       >
-                  <Nav.Link href="/">Home</Nav.Link>
+                  <Nav.Link   href="/" >Home</Nav.Link>
                 </OverlayTrigger>
 
-                <OverlayTrigger placement="right-start"
-                  delay={{ show: 0, hide: 0 }}
-                  overlay={TicketTip}
+                <OverlayTrigger placement="right-start"              
+                  overlay={
+                    <Tooltip>
+                      View Tickets
+                    </Tooltip>}
                   placement='bottom'>
-                  <Nav.Link href="/ViewTickets">Tickets</Nav.Link>
+                  <Nav.Link  href="/ViewTickets">Tickets</Nav.Link>
                 </OverlayTrigger>
 
-
-                <Nav.Link href="/NewTicket">Ask questions</Nav.Link>
+              <OverlayTrigger 
+                  placement="right-start"                  
+                  placement='bottom'
+                  overlay={
+                    <Tooltip>
+                      Let us help!
+                    </Tooltip>                                   
+                  }
+                >
+                <Nav.Link href="/NewTicket">Send Ticket</Nav.Link>
+              </OverlayTrigger>
 
               </Nav>
               <Form inline>
                <Nav.Link href="/SignUp">Sign up</Nav.Link>
-               <Nav.Link href="/LogIn">Log in</Nav.Link>
+               <Nav.Link  href="/LogIn">Log in</Nav.Link>              
               </Form>
             </Navbar.Collapse>
           </Navbar>
