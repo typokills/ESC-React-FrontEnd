@@ -45,7 +45,14 @@ class App extends Component {
                   placement='bottom'
                       >
 
-                  <Nav.Link   href="/" >Home</Nav.Link>
+                  <Nav.Link   href="/" >
+                  <img 
+                      src="/Images/home.png"
+                      width="25"
+                      height="25"
+                      className="d-inline-block align-top"
+                    />
+                  Home</Nav.Link>
 
                 </OverlayTrigger>
 
@@ -56,7 +63,14 @@ class App extends Component {
                     </Tooltip>}
                   placement='bottom'>
 
-                  <Nav.Link  href="/ViewTickets">Tickets</Nav.Link>
+                  <Nav.Link  href="/ViewTickets">
+                  <img 
+                      src="/Images/tickets.png"
+                      width="25"
+                      height="25"
+                      className="d-inline-block align-top"
+                    />
+                  Tickets</Nav.Link>
                 </OverlayTrigger>
 
               <OverlayTrigger 
@@ -68,7 +82,14 @@ class App extends Component {
                     </Tooltip>                                   
                   }
                 >
-                <Nav.Link href="/NewTicket">Send Ticket</Nav.Link>
+                <Nav.Link href="/NewTicket">
+                <img 
+                      src="/Images/questions.png"
+                      width="25"
+                      height="25"
+                      className="d-inline-block align-top"
+                    />
+                Send Ticket</Nav.Link>
               </OverlayTrigger>
 
               </Nav>
