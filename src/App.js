@@ -94,8 +94,14 @@ class App extends Component {
 
               </Nav>
               <Form inline>
-               <Nav.Link href="/SignUp">Sign up</Nav.Link>
-               <Nav.Link  href="/LogIn">Log in</Nav.Link>              
+               <Nav.Link 
+                href="/SignUp"
+                style={{ color: 'white' }}
+                >Sign up</Nav.Link>
+               <Nav.Link  
+                href="/LogIn"
+                style={{ color: 'white' }}
+                >Log in</Nav.Link>              
 
               </Form>
             </Navbar.Collapse>
