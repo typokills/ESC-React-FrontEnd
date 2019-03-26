@@ -18,6 +18,7 @@ class App extends Component {
     return (
       
       <div className="App">
+
         
         <Navbar bg="dark" variant="dark" expand="lg">
             <Navbar.Brand  href="#home">
@@ -25,6 +26,7 @@ class App extends Component {
                 src="/Images/accentureOrange.png"
                 width="30"
                 height="30"
+      
                 className="d-inline-block align-top"
                 //alt="React Bootstrap logo"
                 />
@@ -42,7 +44,9 @@ class App extends Component {
                   }
                   placement='bottom'
                       >
+
                   <Nav.Link   href="/" >Home</Nav.Link>
+
                 </OverlayTrigger>
 
                 <OverlayTrigger placement="right-start"              
@@ -51,6 +55,7 @@ class App extends Component {
                       View Tickets
                     </Tooltip>}
                   placement='bottom'>
+
                   <Nav.Link  href="/ViewTickets">Tickets</Nav.Link>
                 </OverlayTrigger>
 
@@ -70,6 +75,7 @@ class App extends Component {
               <Form inline>
                <Nav.Link href="/SignUp">Sign up</Nav.Link>
                <Nav.Link  href="/LogIn">Log in</Nav.Link>              
+
               </Form>
             </Navbar.Collapse>
           </Navbar>
