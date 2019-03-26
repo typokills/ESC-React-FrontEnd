@@ -11,7 +11,7 @@ export default class NewTicket extends React.Component {
             alignItems: "center",
             justifyContent: "center"
           }}>
-          <Card style={{width:"35rem"}}  className="text-center">
+          <Card style={{width:"35rem"}}  className="text-center" bg="dark" text="white">
               <Card.Header as="h4">New Ticket Submission</Card.Header>
               <Card.Body>
               <InputGroup className="mb-3">
@@ -22,6 +22,7 @@ export default class NewTicket extends React.Component {
                     placeholder="Jeremy"
                     aria-label="First Name"
                     aria-describedby="First Name"
+                    bg="grey"
                     />
                 </InputGroup>
 
@@ -77,6 +78,7 @@ export default class NewTicket extends React.Component {
                     variant="outline-secondary"
                     title="Issue Type"
                     id="input-group-dropdown-1"
+                    text="white"
                     >
                     <Dropdown.Item href="#">CSE Assignment</Dropdown.Item>
                     <Dropdown.Item href="#">Bed Bugs</Dropdown.Item>
@@ -91,14 +93,14 @@ export default class NewTicket extends React.Component {
 
                 <label htmlFor="basic-url">Problem Description</label>
                 <FormControl as="textarea" aria-label="With textarea" />
-
+                    <h1>      </h1>
                 
-                <Button variant="primary">Submit</Button>
+                <Button variant="light">Submit</Button>
 
 
 
               </Card.Body>
-              <Card.Footer className="text-muted">High performance. Delivered.</Card.Footer>
+              <Card.Footer className="text-muted" >High performance. Delivered.</Card.Footer>
             </Card>
             </Container>
           </div>
