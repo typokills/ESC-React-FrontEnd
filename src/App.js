@@ -6,6 +6,7 @@ import HomePage from './Components/HomePage.js';
 import myForm from './myForm.js';
 import LogIn from './Components/LogIn.js';
 import SignUpForm from './Components/SignUpForm.js'
+import ViewTicket from './Components/ViewTickets.js'
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import HomeTip from './ToolTips/HomeTip';
 import TicketTip from './ToolTips/TicketTip';
@@ -22,8 +23,8 @@ class App extends Component {
             <Navbar.Brand  href="#home">
               <img 
                 src="/Images/accentureOrange.png"
-                width="50"
-                height="50"
+                width="30"
+                height="30"
                 className="d-inline-block align-top"
                 //alt="React Bootstrap logo"
                 />
@@ -79,7 +80,8 @@ class App extends Component {
         <Route path="/" component={HomePage}></Route>
         <Route path="/SignUp" component={SignUpForm}></Route>
         <Route path="/LogIn" component={LogIn}></Route>
-        <Route path="/NewTicket" component={NewTicket}></Route>
+        <Route path="/NewTicket" component={NewTicket}></Route> 
+        <Route path="/ViewTickets" component={ViewTicket}></Route>
 
       </Router>
       </div>

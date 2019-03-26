@@ -11,7 +11,7 @@ export default class NewTicket extends React.Component {
             alignItems: "center",
             justifyContent: "center"
           }}>
-          <Card style={{width:"40rem"}}  className="text-center">
+          <Card style={{width:"35rem"}}  className="text-center">
               <Card.Header as="h4">New Ticket Submission</Card.Header>
               <Card.Body>
               <InputGroup className="mb-3">
@@ -35,7 +35,7 @@ export default class NewTicket extends React.Component {
                     aria-describedby="Last Name"
                     />
                 </InputGroup>
-                  
+            
                 <InputGroup className="mb-3">
                     <InputGroup.Prepend>
                         <InputGroup.Text id="basic-addon1">Email</InputGroup.Text>
@@ -46,6 +46,7 @@ export default class NewTicket extends React.Component {
                     aria-describedby="basic-addon1"
                     />
                 </InputGroup>
+                
 
                 <InputGroup className="mb-3">
                     <InputGroup.Prepend>
