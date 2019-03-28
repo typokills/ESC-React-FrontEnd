@@ -11,8 +11,8 @@ export default class NewTicket extends React.Component {
             alignItems: "center",
             justifyContent: "center"
           }}>
-          <Card style={{width:"35rem"}}  className="text-center" bg="dark" text="white">
-              <Card.Header as="h4">New Ticket Submission</Card.Header>
+          <Card style={{width:"35rem"}}  className="text-center" bg="grey" text="orange">
+              <Card.Header text="orange">New Ticket Submission</Card.Header>
               <Card.Body>
               <InputGroup className="mb-3">
                     <InputGroup.Prepend>

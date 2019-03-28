@@ -12,7 +12,7 @@ export default class SignUpForm extends React.Component {
             justifyContent: "center"
           }}>
           <Card style={{width:"40rem"}} className="text-text-center"  >
-              <Card.Header className="text-center">Sign Up Form</Card.Header>
+              <Card.Header className="text-center" text="orange">Sign Up Form</Card.Header>
               <Card.Title className="text-center">You're about to be an exclusive member of the Accenture Club.</Card.Title>
               <Card.Text className="text-center">
                   Our Consultants provide 24/7 to ensure your business runs smoothly.

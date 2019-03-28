@@ -13,7 +13,10 @@ import TicketTip from './ToolTips/TicketTip';
 import NewTicket from './Components/NewTicket'
 import newTicketTip from './ToolTips/newTicketTip'
 
+
 class App extends Component {
+
+
   render() {
     return (
       
@@ -106,6 +109,7 @@ class App extends Component {
               </Form>
             </Navbar.Collapse>
           </Navbar>
+          
       <Router>
      
         {/*<HomePage></HomePage>*/}
