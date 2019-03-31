@@ -19,14 +19,14 @@ export default class ViewTicket extends React.Component {
   <tbody>
     <tr>
       <td>1</td>
-      <td>Server Issue</td>
+      <td><a href="TicketPage/ticket1">Server Issue</a></td>
       <td>Lagging</td>
       <td>Sorry can't help.</td>
       <td>Helppppp!</td>
     </tr>
     <tr>
       <td>3</td>
-      <td colSpan="2">Larry the Bird</td>
+      <td colSpan="2"><a href="TicketPage/ticket2">Larry the Bird</a></td>
       <td>@twitter</td>
     </tr>
   </tbody>
