@@ -12,13 +12,15 @@ import HomeTip from './ToolTips/HomeTip';
 import TicketTip from './ToolTips/TicketTip';
 import NewTicket from './Components/NewTicket'
 import newTicketTip from './ToolTips/newTicketTip'
+import MaterialNavBar from './Components/MaterialNavBar'
+import Profile from './Components/Profile'
+
 
 class App extends Component {
   render() {
     return (
       
       <div className="App">
-
         
         <Navbar bg="dark" variant="dark" expand="lg">
             <Navbar.Brand  href="#home">
@@ -26,7 +28,6 @@ class App extends Component {
                 src="/Images/accentureOrange.png"
                 width="30"
                 height="30"
-      
                 className="d-inline-block align-top"
                 //alt="React Bootstrap logo"
                 />
@@ -44,16 +45,7 @@ class App extends Component {
                   }
                   placement='bottom'
                       >
-
-                  <Nav.Link   href="/" >
-                  <img 
-                      src="/Images/home.png"
-                      width="25"
-                      height="25"
-                      className="d-inline-block align-top"
-                    />
-                  Home</Nav.Link>
-
+                  <Nav.Link   href="/" >Home</Nav.Link>
                 </OverlayTrigger>
 
                 <OverlayTrigger placement="right-start"              
@@ -62,15 +54,7 @@ class App extends Component {
                       View Tickets
                     </Tooltip>}
                   placement='bottom'>
-
-                  <Nav.Link  href="/ViewTickets">
-                  <img 
-                      src="/Images/tickets.png"
-                      width="25"
-                      height="25"
-                      className="d-inline-block align-top"
-                    />
-                  Tickets</Nav.Link>
+                  <Nav.Link  href="/ViewTickets">Tickets</Nav.Link>
                 </OverlayTrigger>
 
               <OverlayTrigger 
@@ -82,18 +66,17 @@ class App extends Component {
                     </Tooltip>                                   
                   }
                 >
-                <Nav.Link href="/NewTicket">
-                <img 
-                      src="/Images/questions.png"
-                      width="25"
-                      height="25"
-                      className="d-inline-block align-top"
-                    />
-                Send Ticket</Nav.Link>
+                <Nav.Link href="/NewTicket">Send Ticket</Nav.Link>
               </OverlayTrigger>
 
               </Nav>
               <Form inline>
+
+              <Nav.Link  
+                href="/Profile"
+                style={{ color: 'white' }}
+                >Profile</Nav.Link>  
+
                <Nav.Link 
                 href="/SignUp"
                 style={{ color: 'white' }}
@@ -101,11 +84,14 @@ class App extends Component {
                <Nav.Link  
                 href="/LogIn"
                 style={{ color: 'white' }}
-                >Log in</Nav.Link>              
+                >Log in</Nav.Link>    
+
+             
 
               </Form>
             </Navbar.Collapse>
           </Navbar>
+        
       <Router>
      
         {/*<HomePage></HomePage>*/}
@@ -115,6 +101,7 @@ class App extends Component {
         <Route path="/LogIn" component={LogIn}></Route>
         <Route path="/NewTicket" component={NewTicket}></Route> 
         <Route path="/ViewTickets" component={ViewTicket}></Route>
+        <Route path="/Profile" component={Profile}></Route>
 
       </Router>
       </div>

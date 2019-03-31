@@ -3,7 +3,7 @@ import Sidebar from "react-sidebar";
 import {Navbar,Nav,NavDropdown,Form,FormControl, Card, Button, Image, Container, Col, InputGroup, Dropdown, DropdownButton} from 'react-bootstrap' 
 
 class HomePage extends React.Component {
-   
+
   render() {
     return (
   <p></p>
@@ -12,6 +12,10 @@ class HomePage extends React.Component {
 }
  
 export default HomePage;
+
+
+
+
 
 /* export default class HomePage extends React.Component {
     render(){

@@ -1,5 +1,6 @@
 import React from 'react'
 import {Navbar,Nav,NavDropdown,Form,FormControl, Button, Image, Container, Card} from 'react-bootstrap'
+
 //import logo from './homepage_Accenture.png';
 
 
@@ -26,7 +27,7 @@ export default class LogIn extends React.Component {
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button href="/LoggedIn" variant="primary" type="submit">
                     Log in
                 </Button>
             
