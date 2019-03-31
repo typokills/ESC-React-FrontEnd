@@ -23,7 +23,7 @@ class App extends Component {
       <div className="App">
         
         <Navbar bg="dark" variant="dark" expand="lg">
-            <Navbar.Brand  href="#home">
+            <Navbar.Brand  href="/">
               <img 
                 src="/Images/accentureOrange.png"
                 width="30"
